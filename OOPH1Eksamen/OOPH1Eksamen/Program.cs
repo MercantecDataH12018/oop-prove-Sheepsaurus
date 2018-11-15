@@ -11,7 +11,6 @@ namespace OOPH1Eksamen
      * 
     */
 
-
     class Program {
         public static void Main() {
 			//Denne funktion kan du bruge til at teste din kode
@@ -66,18 +65,16 @@ namespace OOPH1Eksamen
     //er muligt at læse værdierne 'a' og 'b'
     class D
     {
-        private int a;
-        private string b;		
+        private readonly int a;
+        private readonly string b;		
 
 		public int A
 		{
 			get { return a; }
-			set { a = value; }
 		}
 		public string B
 		{
 			get { return b; }
-			set { b = value; }
 		}
 	}
 
