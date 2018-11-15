@@ -42,11 +42,8 @@ namespace OOPH1Eksamen
     {
         public int a;
 
-		public void EnlargeA()
-		{
-			a++;
-		}
-    }
+		public void EnlargeA() => a++;
+	}
 
     //OPG Tilføj en metode kaldet "getA" der kan returnere værdien i a
     class G
@@ -65,11 +62,8 @@ namespace OOPH1Eksamen
     {
         List<int> numbers = new List<int>();
 
-		public void AddNumber(int a)
-		{
-			numbers.Add(a);
-		}
-    }
+		public void AddNumber(int a) => numbers.Add(a);
+	}
 
     //OPG Implementer encapsulation i denne klasse, men gør således det stadig 
     //er muligt at læse værdierne 'a' og 'b'
@@ -110,22 +104,16 @@ namespace OOPH1Eksamen
     class H
     {
 		A a;
-		public H()
-		{
-			a = new A(1, "", 1);
-		}        
-    }
+		public H() => a = new A(1, "", 1);
+	}
 
     //OPG Ændre funktionen PrintM, således at den ikke crasher programmet hvis den køres.
     class I 
     {
         public string text;
 
-        public void PrintM(){
-			if (text != null)
-			{
-				Console.WriteLine("Text is " + text.Length + "long");
-			}
+        public void PrintM() {
+			if (text != null) Console.WriteLine("Text is " + text.Length + "long");			
         }
     }
 
@@ -136,16 +124,11 @@ namespace OOPH1Eksamen
         public I i;
 
         public void Invoke() {
-			if (i != null)
-			{
-				i.PrintM();
-			}
+			if (i != null) i.PrintM();			
         }
 
-        public J(I i) {
-            this.i = i;
-        }
-    }
+		public J(I i) => this.i = i;
+	}
 
     //OPG Herunder skal du selv implementere en class kaldet MyClass der
     //er subclass til C. Tilføj et public string felt kaldet 'myString'.
