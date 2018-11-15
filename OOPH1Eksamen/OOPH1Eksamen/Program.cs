@@ -76,25 +76,17 @@ namespace OOPH1Eksamen
     class D
     {
         private int a;
-        private string b;
+        private string b;		
 
-		public int GetA()
+		public int A
 		{
-			return a;
+			get { return a; }
+			set { a = value; }
 		}
-
-		public void SetA(int a)
+		public string B
 		{
-			this.a = a;
-		}
-		public string GetB()
-		{
-			return b;
-		}
-
-		public void SetB(string b)
-		{
-			this.b = b;
+			get { return b; }
+			set { b = value; }
 		}
 	}
 
@@ -161,7 +153,4 @@ namespace OOPH1Eksamen
     class MyClass : C {
 		public string myString;
     }
-
-
-
 }
