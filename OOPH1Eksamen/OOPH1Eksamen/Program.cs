@@ -50,11 +50,8 @@ namespace OOPH1Eksamen
     {
         string a = "Hello!";
 
-		public string GetA()
-		{
-			return a;
-		}
-    }
+		public string GetA() => a;
+	}
 
     //OPG Tilføj en metode der kan tilføje et tal til numbers. Numbers skal
     //forblive private.
